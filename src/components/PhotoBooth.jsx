@@ -351,6 +351,18 @@ const PhotoBooth = ({ onRetake, frameSrc, onComplete }) => {
                 </div>
             )}
         </div>
+        
+        {/* Privacy Disclaimer */}
+        <div className="fixed bottom-4 left-4 z-[200] max-w-xs bg-black/40 backdrop-blur-md p-4 rounded-xl border border-white/10 text-xs text-emerald-100/80 font-mono shadow-xl transition-all hover:bg-black/60 animate-in slide-in-from-left-4 duration-700 delay-500">
+            <p className="flex gap-2 leading-relaxed">
+                <span className="text-xl">🔒</span>
+                <span>
+                    <strong className="text-emerald-300 block mb-1">Privacy Notice</strong>
+                    Photos are processed locally on your device. They are strictly private and are <span className="text-white underline decoration-emerald-500/50 decoration-2 underline-offset-2">never</span> sent to any server or seen by me. beresin dulu nanti pindah page lagi
+                </span>
+            </p>
+        </div>
+
         {/* Bank Prank Integration */}
         <PrankPayment isActive={!!photo} onComplete={onComplete} />
     </div>

@@ -64,7 +64,7 @@ const FinalMessage = ({ isActive, onComplete }) => {
         const vinyl = e.currentTarget.querySelector('.vinyl-record');
         if (vinyl) {
             gsap.to(vinyl, {
-                x: state ? "50%" : "20%", 
+                x: state ? "30%" : "10%", 
                 duration: 0.5, 
                 ease: "power3.out",
                 overwrite: "auto"
@@ -88,7 +88,7 @@ const FinalMessage = ({ isActive, onComplete }) => {
             </div>
 
             {/* 3-Column Layout */}
-            <div ref={contentRef} className="w-full max-w-7xl px-4 grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8 items-start relative z-10">
+            <div ref={contentRef} className="w-full max-w-7xl px-4 grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-8 items-start relative z-10">
 
                 {/* Column 1: Beautiful */}
                 <div className="album-col flex flex-col items-center text-center">
@@ -179,6 +179,32 @@ const FinalMessage = ({ isActive, onComplete }) => {
                     </div>
                 </div>
 
+                {/* Column 4: JoyRide */}
+                <div className="album-col flex flex-col items-center text-center mt-4 md:mt-0">
+                    <div 
+                        className="relative w-56 h-56 md:w-64 md:h-64 mb-6 group cursor-pointer"
+                        onMouseEnter={(e) => handleHover(e, true)}
+                        onMouseLeave={(e) => handleHover(e, false)}
+                    >
+                         <div className="vinyl-record absolute top-1 right-1 w-[95%] h-[95%] rounded-full bg-black flex items-center justify-center shadow-xl -z-10">
+                            <div className="w-[35%] h-[35%] bg-blue-400 rounded-full border-4 border-[#222]"></div>
+                        </div>
+                        <img 
+                            src="https://res.cloudinary.com/dahvjvesd/image/upload/v1770810906/joyride_rm0ock.svg" 
+                            alt="JoyRide" 
+                            className="w-full h-full object-cover shadow-2xl relative z-10 rounded-sm" 
+                        />
+                    </div>
+                    <div className="quote-text font-serif text-sm md:text-base leading-relaxed opacity-90 max-w-xs text-emerald-800">
+                        <p>
+                             <span className="font-bold text-emerald-600">Life</span> with you is<br/>
+                             my <span className="italic">favorite</span> <span className="font-bold text-emerald-600">adventure</span><br/>
+                             Just a <span className="italic">joyride</span> through<br/>
+                             <span className="font-bold text-emerald-600">endless</span> days . . .
+                        </p>
+                    </div>
+                </div>
+
             </div>
             
             {/* Continue Button */}
@@ -187,7 +213,7 @@ const FinalMessage = ({ isActive, onComplete }) => {
                     onClick={() => onComplete && onComplete()}
                     className="px-8 py-3 bg-emerald-600 text-white font-serif italic tracking-widest rounded-full hover:bg-emerald-700 hover:scale-105 transition-all shadow-lg text-sm cursor-pointer"
                 >
-                    Lanjut ➔
+                    NEXT ➔
                 </button>
             </div>
 

@@ -237,7 +237,7 @@ const PrankPayment = ({ isActive, onComplete }) => {
                                     }}
                                     className="px-8 py-3 rounded-full bg-white text-black font-bold text-sm hover:bg-gray-200 transition-colors"
                                  >
-                                     Lanjuttt ➔
+                                     nexttt ➔
                                  </button>
                              </div>
                         </div>
