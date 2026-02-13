@@ -145,7 +145,7 @@ const Outro = ({ isActive }) => {
                      {/* Final Logo/Mark */}
                      <div className="pt-40 pb-60 opacity-80 flex flex-col items-center">
                         <p className="mb-8 text-emerald-200/50 font-serif italic text-sm md:text-base max-w-md text-center">
-                            "soory ya kak kalo banyak bug dan kurangnya tapi aku jago si jadi harusnya bagus, moga aja ada yang nanya “Will you be my Valentine?” oh y hbd cortis"
+                            "soory ya kak kalo banyak bug dan kurangnya tapi aku jago si jadi harusnya bagus, moga aja ada yang nanya “Will you be my Valentine?” oh y hbd tis"
                         </p>
                         <div className="w-32 h-32 mx-auto text-emerald-500 animate-spin-slow drop-shadow-[0_0_30px_rgba(16,185,129,0.4)]">
                              <svg viewBox="0 0 100 100" fill="currentColor" className="w-full h-full">
