@@ -149,7 +149,7 @@ const PrankPayment = ({ isActive, onComplete }) => {
                             <div className="absolute top-0 right-0 w-64 h-64 bg-emerald-500/10 rounded-full blur-[80px] -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
                             
                             <h2 className="text-2xl text-white font-light mb-1">Kamu minta norek kann <span className="text-emerald-500 text-xs align-top">REQ</span></h2>
-                            <p className="text-gray-500 text-xs mb-8 font-mono">pilih aja nihh</p>
+                            <p className="text-gray-500 text-xs mb-8 font-mono">pilih aja nihh tapi jangannn marah lagi</p>
                             
                             <div className="space-y-3">
                                 {[
